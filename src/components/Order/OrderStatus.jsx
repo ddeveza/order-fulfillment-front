@@ -12,9 +12,13 @@ const OrderStatus = ({ product }) => {
         <div className='bg-gray-200 rounded-full overflow-hidden'>
           <div
             className='h-2 bg-indigo-600 rounded-full'
-            style={{
-              width: `calc((${product.step} * 2 + 1) / 8 * 100%)`,
-            }}
+            style={
+              product.step > 2
+                ? { width: '100%' }
+                : {
+                    width: `calc((${product.step} * 2 + 1) / 8 * 100%)`,
+                  }
+            }
           />
         </div>
         <div className='hidden sm:grid grid-cols-4 text-sm font-medium text-gray-600 mt-6'>
