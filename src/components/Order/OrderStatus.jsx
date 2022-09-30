@@ -4,10 +4,7 @@ const OrderStatus = ({ product }) => {
   return (
     <div className='border-t border-gray-200 py-6 px-4 sm:px-6 lg:p-8'>
       <h4 className='sr-only'>Status</h4>
-      <p className='text-sm font-medium text-gray-900'>
-        {product.status} on{' '}
-        <time dateTime={product.datetime}>{product.date}</time>
-      </p>
+      <p className='text-sm font-medium text-gray-900'>Order Statuss</p>
       <div className='mt-6' aria-hidden='true'>
         <div className='bg-gray-200 rounded-full overflow-hidden'>
           <div

@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <section aria-labelledby='products-heading' className='mt-6'>
+      <section aria-labelledby='products-heading' className='mt-6 py-16 px-40'>
         {orders.length > 0 ? (
           <Order products={orders} />
         ) : (
